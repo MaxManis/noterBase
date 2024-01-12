@@ -1,0 +1,25 @@
+.successToastMain {
+  position: absolute;
+  right: 50%;
+  bottom: 24px;
+  transform: translateX(50%);
+
+  padding: 6px 24px;
+  z-index: 88;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 48px;
+
+  border: 1px solid #066e06;
+  background: #1e2327;
+  border-radius: 8px;
+}
+.successIcon {
+  color: #066e06;
+  transform: scale(1.2) translateY(2px);
+}
+.successText {
+  color: #737579;
+}

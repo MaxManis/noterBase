@@ -1,0 +1,83 @@
+.aboutContent {
+  padding: 12px 8px;
+  overflow-y: scroll;
+}
+.aboutTitle {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.noterBaseTitle {
+  color: #89c4e0;
+  text-decoration: underline;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.intro {
+  margin-bottom: 44px;
+}
+
+.feature {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.featureList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.upcomingFeatures {
+  font-size: 18px;
+  margin-top: 20px;
+}
+.upcomingFeaturesList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 44px;
+}
+li > strong {
+  color: #89c4e0;
+  text-decoration: underline;
+}
+
+.whyNoterbase {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.downloadButton {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+.downloadButton:hover {
+  background-color: #0056b3;
+}
+.selectKey {
+  color: #ebffed;
+}
+.by {
+  text-decoration: underline;
+  margin: 12px auto;
+  color: gray;
+  display: block;
+  text-align: end;
+}

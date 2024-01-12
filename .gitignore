@@ -1,0 +1,41 @@
+# env:
+.env
+
+#logs:
+logs
+*.log
+npm-debug.log*
+
+# main ignore:
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.DS_Store
+.tmp
+node_modules/
+/.pnp
+.pnp.js
+
+# JavaScript IDEs:
+.idea
+.vscode
+
+# Vim files:
+*.csv
+*.sw[op]
+
+# Cache:
+.npm
+.cache/
+
+# JavaScript Projects dirs (optional)
+dist
+uploads
+build

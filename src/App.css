@@ -1,0 +1,256 @@
+/* Global styles: */
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #181c1f;
+  font-family: "San Francisco", Arial, sans-serif;
+  font-size: 14px;
+  color: #fefefe;
+  max-height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+input,
+textarea {
+  border: none;
+  outline: none;
+  resize: none;
+  width: 100%;
+  background-color: #181c1f;
+  color: #fefefe;
+  font-family: "San Francisco", Arial, sans-serif;
+  font-size: 14px;
+}
+
+textarea {
+  height: 400px;
+}
+/* Global helpers: */
+.pos-rel {
+  position: relative;
+}
+.flex-1 {
+  flex: 1;
+}
+.noShow {
+  display: none;
+}
+
+.contetn-body {
+  display: flex;
+  height: 100vh;
+}
+.startInfo {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Side bar: */
+.side-bar {
+  width: 150px;
+  min-width: 150px;
+  border-right: 1px solid #282e32;
+  background-color: #1e2327;
+}
+
+.side-bar__menu {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 20px 10px;
+}
+.side-bar__icon {
+  color: #737579;
+}
+.button--main-active > .side-bar__icon {
+  color: #ffffff;
+}
+
+.button--main {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  background-color: #1e2327;
+  color: #737579;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  text-align: start;
+}
+.button--main:hover {
+  background-color: #282e32;
+}
+.button--main-active {
+  background-color: #373e43;
+  color: white;
+}
+
+/* Main content window (next to sidebar): */
+.main-content {
+  display: flex;
+  width: 100%;
+}
+.main-content__first {
+  width: 200px;
+  min-width: 200px;
+  padding: 12px 8px 8px;
+  border-right: 1px solid #282e32;
+  overflow: scroll;
+}
+.main-content__first-search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 8px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid #282e32;
+
+  position: sticky;
+  top: 0;
+  background-color: #181c1f;
+  z-index: 80;
+}
+/* Search field: */
+.main-content__search {
+  position: sticky;
+  top: 40px;
+  background-color: #181c1f;
+  margin-bottom: 6px;
+  border-bottom: 1px solid #282e32;
+
+  display: flex;
+}
+.main-content__search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.main-content__search-field {
+  flex: 1;
+  padding: 8px 0px 8px 34px;
+}
+/* Note in list of notes on AllNotes: */
+.main-content__note_prev {
+  background-color: #181c1f;
+  color: #ffffff;
+  padding: 16px 10px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  text-align: start;
+
+  margin-bottom: 6px;
+}
+.main-content__note_prev:hover {
+  background-color: #1e2327;
+}
+/* Note Editor styles: */
+.noteContentBlock {
+  position: absolute;
+  left: 10px;
+  right: 6px;
+  top: 52px;
+  bottom: 0;
+}
+
+/* Second part, where note is opend from notes on AllNotes: */
+.main-content__second {
+  padding: 12px 10px;
+  overflow: scroll;
+  position: relative;
+  width: 100%;
+}
+
+.activeColor {
+  background-color: #373e43;
+}
+
+.lightColor {
+  background-color: #282e32;
+}
+
+.nonActiveColor {
+}
+
+/* Button Main: */
+.button--main {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  background-color: #1e2327;
+  color: #737579;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  text-decoration: none;
+  text-align: start;
+}
+.button--main:hover {
+  background-color: #282e32;
+}
+.button--main-active {
+  background-color: #373e43;
+  color: white;
+}
+
+/* Othere styles: */
+.toolbarClassName,
+.editorClassName {
+  background-color: #181c1f;
+  color: white;
+  border: 1px solid #282e32;
+  border-radius: 4px;
+}
+.editorClassName {
+  padding: 8px;
+}
+
+.toolbarClassName {
+  position: sticky;
+  top: 40px;
+  z-index: 99;
+}
+
+::-webkit-scrollbar {
+  height: 4px; /* height of horizontal scrollbar ← You're missing this */
+  width: 4px; /* width of vertical scrollbar */
+  /* border: 1px solid #282e32; */
+}
+.rdw-option-wrapper {
+  border-color: #373e43;
+}
+.rdw-dropdown-selectedtext {
+  color: black;
+}
+/* Editor additional styles: */
+.rdw-emoji-modal,
+.rdw-dropdown-optionwrapper,
+.rdw-fontfamily-optionwrapper {
+  color: white;
+  background-color: #181c1f !important;
+  border-color: #181c1f;
+}
+.rdw-link-modal,
+.rdw-embedded-modal,
+.rdw-emoji-modal,
+.rdw-colorpicker-modal,
+.rdw-image-modal {
+  color: white;
+  background-color: #181c1f !important;
+  border-color: #181c1f;
+}
+.rdw-dropdownoption-active {
+  background: #373e43 !important;
+}
+.rdw-dropdownoption-highlighted {
+  background-color: #1e2327 !important;
+}

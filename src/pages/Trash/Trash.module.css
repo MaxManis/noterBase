@@ -1,0 +1,22 @@
+.trashCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 48px;
+}
+.trashAllCards {
+  padding: 12px 8px;
+  overflow-y: scroll;
+  border-right: 1px solid #282e32;
+}
+.trashTitle {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.trashCardButtons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}

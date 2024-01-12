@@ -1,0 +1,43 @@
+.modale {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-color: #1e2327;
+  border: 1px solid #282e32;
+  border-radius: 8px;
+
+  padding: 14px 12px;
+  width: 300px;
+
+  backdrop-filter: blur(4px);
+}
+
+.content {
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #282e32;
+}
+.title {
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.text {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+.actions {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.buttons {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 6px;
+}
